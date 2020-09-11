@@ -19,6 +19,9 @@ public class WeekTemp{
         final String fri = scanner.next(); 
         System.out.println("What is Saturdays's tempurature?");
         final String sat = scanner.next(); 
+        
+        scanner.close(); 
+        //scanner.nextInt(); would have cut down the chonkiness of the code
 
         System.out.println("Your weekly calender is : \n Sunday" + sun + "\n Monday:" + mon + "\n Tuesday:" + tues + "\n Wednsday:" + wed + "\n Thursday:" + thur + "\n Friday:" + fri + "\n Saturday:" + sat); 
 
