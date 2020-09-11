@@ -22,7 +22,9 @@ public class WeekTemp{
         
         scanner.close(); 
         //scanner.nextInt(); would have cut down the chonkiness of the code
-
+        //change primative file type from int to double
+        //cast variable to another type //  o/((double)(n))
+        //grabtemp(variable names if applicable)
         System.out.println("Your weekly calender is : \n Sunday" + sun + "\n Monday:" + mon + "\n Tuesday:" + tues + "\n Wednsday:" + wed + "\n Thursday:" + thur + "\n Friday:" + fri + "\n Saturday:" + sat); 
 
         final int intsun = Integer.parseInt(sun);
@@ -40,5 +42,10 @@ public class WeekTemp{
         System.out.println("The average tempurature for the week is " + average); 
         
     }
+
+    //public static Variablegottn(void) grabtemp(vaariable names if applicable if not put void){
+    //insert function code yay
+    //return something to outside of funciton probaly a variable
+    //}; 
 
 }
