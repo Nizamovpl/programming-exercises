@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class AvgRainFall{
+    public static void main(String[] args){
+        int may = 0;  
+        int april = 0; 
+        int june = 0 ; 
+        int avgRainFall = (may+april+june)/3; 
+
+        System.out.println("The average value for each of the montsh is " + avgRainFall); 
+
+        System.out.println("Would you like to see the months true/false");
+        scanner.nextBoolean(); 
+
+
+
+
+    }
+
+
+
+}
+

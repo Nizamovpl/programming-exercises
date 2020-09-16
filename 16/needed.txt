@@ -1,2 +1,2 @@
-needed 1,2, 4, 5 or 6, 7 or 8
+needed 1,2, 4, (5 or 6), 7 or 8
 
