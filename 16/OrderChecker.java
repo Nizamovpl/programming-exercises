@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class OrderChecker{
 
-    public void main (){
+    public void main (String[] args){
         Scanner scanner = new Scanner(System.in);
     
 
@@ -24,7 +24,7 @@ public class OrderChecker{
             //nested function later down the line seperate from main to do calculations
             //add code that transfers cents to dollars
         }else{
-         System.out.println("There is an error with this order; please try again"); 
+         //System.out.println("There is an error with this order; please try again"); 
          //later down on the line I want to add something that re runs this series of code. 
          //I don't know how though   
         }
