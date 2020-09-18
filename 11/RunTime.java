@@ -9,14 +9,7 @@ public class RunTime{
         System.out.println(one);
         System.out.println(two); 
 
-
-
     }
-
-
-
-
-
 }
 
 
