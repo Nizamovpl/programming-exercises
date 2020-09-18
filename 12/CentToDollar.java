@@ -53,7 +53,7 @@ public class CentToDollar{
         //need to finish print statement. if then statements can be
         //incorperated later to parse all of the unessesary things. 
 
-        System.out.println("Dollars: " + dollars + "/n Quarters: "+ quarters + "/n Dimes: " + dimes + "/n nickels" + "pennies" + cents) 
+        System.out.println("Dollars: " + dollars + "/n Quarters: "+ quarters + "/n Dimes: " + dimes + "/n nickels" + "pennies" + cents); 
 
 
     }
