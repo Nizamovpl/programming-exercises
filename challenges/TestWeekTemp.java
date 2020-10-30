@@ -5,7 +5,7 @@
 
 public class TestWeekTemp{
     public static void main(final String[] args){
-        final Scanner scanner = new Scanner(System.in); 
+        Scanner scanner = new Scanner(System.in); 
 
         System.out.println("What is Sunday's tempurature?"); 
         final String sun = scanner.next(); 
