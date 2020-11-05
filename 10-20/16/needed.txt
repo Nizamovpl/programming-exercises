@@ -1,3 +1,0 @@
-completed 1,2, 6 (not debugged)
-
-completed and debugged 4 (basic framework), working on 7
