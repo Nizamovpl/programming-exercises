@@ -14,9 +14,11 @@ public class IO {
         try {
             file = new File("wrong.csv");
             scan = new Scanner(file);
-            String letter = scan.nextLine(); 
-            int num = scan.nextInt(); 
-            String word = scan.next(); 
+            String[] letters = scan.nextLine().split(","); 
+
+            for(String letter : letters){
+                System.out.println(letter); 
+            }
 
             // while(scan.hasNextInt()){
             //     int num = scan.nextInt();
