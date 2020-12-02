@@ -14,11 +14,14 @@ public class IO {
         try {
             file = new File("wrong.csv");
             scan = new Scanner(file);
+            String letter = scan.nextLine(); 
+            int num = scan.nextInt(); 
+            String word = scan.next(); 
 
-            while(scan.hasNextInt()){
-                int num = scan.nextInt();
-                System.out.println("The next number is " + num); 
-            }
+            // while(scan.hasNextInt()){
+            //     int num = scan.nextInt();
+            //     System.out.println("The next number is " + num); 
+            // }
         } catch (Exception e){
             e.printStackTrace();
         } finally {
