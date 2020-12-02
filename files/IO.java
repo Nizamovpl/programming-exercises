@@ -2,33 +2,50 @@ import java.util.Scanner;
 import java.io.*;
 
 public class IO {
-    public static void main(String[] args){
-        System.out.println("Input/Output Example ");
+    public static void main(String[] args) throws IOException{
+        // System.out.println("Input/Output Example ");
 
-        File file;
-        Scanner scan;
+        // File file;
+        // Scanner scan;
+        
+        PrintWriter output = new PrintWriter(output.md); 
+
+        output.println("my new Data"); 
+        Dog dog = new Dog("Spot", "terrier", 10); 
+        output.println(dog); 
+        output.close(); 
 
         //try/cash/finally --> we manage it ourselves
 
         //can do scan has next line
-        try {
-            file = new File("wrong.csv");
-            scan = new Scanner(file);
-            String[] letters = scan.nextLine().split(","); 
+        // try {
+        //     PrintWritter = output = new PrintWriter("output.md"); 
+        //     file = new File("data.csv");
+        //     scan = new Scanner(file);
 
-            for(String letter : letters){
-                System.out.println(letter); 
-            }
+        //     while(scan.hasNextLine()){
+        //         String[] parameters = scan.nextLine().split(","); 
+        //         Dog dog = new Dog(parameters[0], parameters[1], Integer.parseInt(parameters[2]));
+        
+        //         System.out.println(dog);
+        //     }
 
-            // while(scan.hasNextInt()){
-            //     int num = scan.nextInt();
-            //     System.out.println("The next number is " + num); 
-            // }
-        } catch (Exception e){
-            e.printStackTrace();
-        } finally {
-            System.out.println("Done");
-        }
+            
+        //     // String[] letters = scan.nextLine().split(","); 
+
+        //     // for(String letter : letters){
+        //     //     System.out.println(letter); 
+        //     // }
+
+        //     // // while(scan.hasNextInt()){
+        //     // //     int num = scan.nextInt();
+        //     // //     System.out.println("The next number is " + num); 
+        //     // // }
+        // } catch (Exception e){
+        //     e.printStackTrace();
+        // } finally {
+        //     System.out.println("Done");
+        // }
     }
 }
 
