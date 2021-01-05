@@ -6,7 +6,7 @@ public class ArrayPractice{
         // int x2 = 5; 
         // int x3 = 8; 
         
-        
+        //arrays are treated like objects
         int x = 10; 
         //only one type of data in an array
         int[] numbers = new int[x]; //arrays need a size when created 
@@ -41,16 +41,19 @@ public class ArrayPractice{
 
         //for each loop
         for(int num: nums){
-            int(num ==9){
+            if(num==9){
                 numNines++; 
             }
         }
+
 
         //assuptions 
         // *touch all elements
         // *one by one
         // *front to back
         // *array cannot change mid loop
+
+        
     }
 
 
