@@ -1,60 +1,68 @@
 public class ArrayPractice{
+    int data[] = {1,8,5,3};
+    
     public static void main(String[] args){
-        System.out.println("Hip, hip, h-array"); 
-
-        // int x1 = 0; 
-        // int x2 = 5; 
-        // int x3 = 8; 
-        
-        //arrays are treated like objects
-        int x = 10; 
-        //only one type of data in an array
-        int[] numbers = new int[x]; //arrays need a size when created 
-        //cannot change size of arrays
-        numbers[0] = 1; 
-        numbers[0] +=2; 
-        int y = numbers[0] - 1; 
-
-        System.out.println(numbers[0]);
-        
-        int j = 0; 
-        while(j < numbers.length){
-            System.out.println(numbers[j]); 
-            j++; 
-        }
-
-        for(int i = 0; i < numbers.length; i++){
-            System.out.println(numbers[i]); 
-        }
-
-        //            0 1 2 3 4 5 6 
-        int[] nums = {3,4,8,9,9,10}; 
-
-        int numNines = 0; 
-
-        for(int i = 0; i <nums.length; i++){
-            if(nums[i] == 9){
-                numNines++; 
-            }
-        }
-        System.out.println(numNines); 
-
-        //for each loop
-        for(int num: nums){
-            if(num==9){
-                numNines++; 
-            }
-        }
-
-
-        //assuptions 
-        // *touch all elements
-        // *one by one
-        // *front to back
-        // *array cannot change mid loop
-
-        
+       
+       
     }
+
+    //int data[] = {1,8,5,3};
+
+    public static void swapEnds(int[] data){
+         int length = data.length; 
+         
+         int a = data[0]; 
+         int b = data[length]; 
+
+        data[0] = b;
+        data[length] = a;  
+
+    }
+
+    public static void hasSeven(int[] data){
+        int hasSeven = 0; 
+        for(int num:data){ 
+            if(num==7){
+                hasSeven++; 
+            }
+        }
+        System.out.println("Num 7: " + hasSeven); 
+   }
+
+   public static double mean(int[] data){
+        int length = data.length; 
+        int total = 0; 
+        int i = 0; 
+
+        while(i < length){
+            total += data[i]; 
+            i++; 
+        }
+
+       return (double)total/length; 
+   }
+    
+   public static void reverse(int data[]){
+        int length = data.length; 
+        
+        int[] revdata = new int[length]; 
+
+        int i = length; 
+        int j = 0; 
+        while(i > 0){
+
+            revdata[j] = data[i]; 
+            i = i-1; 
+            j ++; 
+        }
+   }
 
 
 }
+
+//Big O
+//Big Theta
+//constant time -> 0(1) -> amount of data doesn't matter
+//arrey.length //constant time
+//Linear time - O(n) -> n is the amount of things on the list
+//printing the array
