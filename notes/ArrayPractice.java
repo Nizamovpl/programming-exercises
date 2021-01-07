@@ -5,9 +5,9 @@ public class ArrayPractice{
        
        
     }
-
     //int data[] = {1,8,5,3};
 
+    //constant time: length of data does not matter
     public static void swapEnds(int[] data){
          int length = data.length; 
          
@@ -19,16 +19,21 @@ public class ArrayPractice{
 
     }
 
+    //linear time: for loop. The length of data does matter. 
+    //also depends on the worst case/best case scenario and average case
+    // 
     public static void hasSeven(int[] data){
         int hasSeven = 0; 
         for(int num:data){ 
             if(num==7){
                 hasSeven++; 
+                break; 
             }
         }
         System.out.println("Num 7: " + hasSeven); 
    }
 
+   //these two are linear
    public static double mean(int[] data){
         int length = data.length; 
         int total = 0; 
@@ -54,7 +59,7 @@ public class ArrayPractice{
             revdata[j] = data[i]; 
             i = i-1; 
             j ++; 
-        }
+        }  
    }
 
 
