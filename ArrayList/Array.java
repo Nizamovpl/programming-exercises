@@ -5,7 +5,6 @@ public class Array{
     //fruits decleration
     ArrayList<String>fruits= new ArrayList<String>(); 
     ArrayList<String>vegetables= new ArrayList<String>(); 
-    ArrayList<String>fruitandVeg= new ArrayList<String>(); 
     //animals decleration
     ArrayList<String>animals= new ArrayList<String>(); 
     //int decleration
@@ -38,14 +37,24 @@ public class Array{
     }
 
     public void setVegtables(){
-       
+        vegetables.add("carrot");
+        vegetables.add("spinach");
+        vegetables.add("beets");
+        vegetables.add("carrot"); 
+        vegetables.add("carrot");
     }
 
 
 
     //functions
     public void foodSort(){
-        
+        ArrayList<String>fruitandVeg= new ArrayList<String>(); 
+
+        fruitandVeg.addAll(vegetables);
+        fruitandVeg.addAll(fruits);
+
+        //return them later
+
     }
 
     public void dupedAnimals(){
@@ -56,14 +65,10 @@ public class Array{
 
         }
 
-
-
-
     }
 
     public void insert(){
-
-
+        //compare until you see the rightbound int closest to it, and leftbound int and shove it between thsoe two
     }
 
     public void reverse(){
