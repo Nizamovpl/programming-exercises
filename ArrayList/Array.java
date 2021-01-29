@@ -10,7 +10,9 @@ public class Array{
     //int decleration
     ArrayList<Integer>num= new ArrayList<Integer>(); 
 
-    public static void main(String[] args){ 
+    public static void main(String[] args){
+        //I blanked on how to initialize lists
+        
     }
 
     //setters for the lists
@@ -52,27 +54,55 @@ public class Array{
 
         fruitandVeg.addAll(vegetables);
         fruitandVeg.addAll(fruits);
-
-        //return them later
+        //sort
 
     }
 
-    public void dupedAnimals(){
-        //go through the list i times comparing the first one to 2nd to third
-        
+    public void dupedAnimals(){ 
         for(int i = 0; i<animals.size(); i++){
-            //System.out.println(list.get(i)); 
+            for(int n = 0; n < animals.size(); n++){
+                if(animals.get(i).equals(animals.get(n))){
+                    animals.remove(n); 
+                }
+            }
 
-        }
+         }
 
     }
 
     public void insert(){
+        int insert = 5; //insert value
+        int leftbound = 0; 
+        
+        //left bound   
+       
+        for(int i = num.size(); i < 0; i--){
+            if(num.get(i) < insert){
+                leftbound = i; 
+                break; 
+            }
+
+        }
+
+        num.add(leftbound,insert);
+
         //compare until you see the rightbound int closest to it, and leftbound int and shove it between thsoe two
+        //right bound is not needed : for now
     }
 
     public void reverse(){
+        int halfSize = num.size() / 2; 
 
+        for(int i=0;i < halfSize; i++){
+            int left = i; 
+            int right = num.size() - i;
+
+            int temp = left; 
+            left = right; 
+            right = temp; 
+        }
+       //flip the two opposite ones as you get to the middles
+        
     }
 
 
