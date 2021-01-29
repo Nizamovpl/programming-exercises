@@ -1,6 +1,9 @@
 public class Coordinates {
-   private double x, y; 
    
+    private double x, y; 
+      
+    ArrayList<Integer>coords= new ArrayList<Integer>(); 
+
    public void setCoords(double x, double y){
         this.x = x; 
         this.y = y; 
@@ -12,6 +15,14 @@ public class Coordinates {
 
     public double getY(){
         return y;
+    }
+
+    public void doubledUp(){
+        //I know the logic put one bracket ( on every n and a ) on every n+1
+    }
+
+    public void midPoint(){
+        //get the index of the last one then insert two, and push over
     }
 
     public String toString(){
